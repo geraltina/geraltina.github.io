@@ -1,0 +1,29 @@
+.wrapper {
+  box-sizing: border-box;
+}
+
+.wrapper--width {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 1170px;
+    max-width: 1240px;
+    width: 94%;
+  }
+}
+
+.wrapper--flex {
+  display: flex;
+}
