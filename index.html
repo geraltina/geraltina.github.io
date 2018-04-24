@@ -64,12 +64,12 @@
     <main class="page-main">
       <section class="promo">
         <div class="promo__catalog">
-          <div class="wrapper  wrapper--width">
+          <div class="promo__wrapper  promo__wrapper_width">
             <ul class="promo__list">
-              <li class="promo__item">
+              <li class="promo__item  promo__item_one">
                 <a href="#" class="promo__link">Печатная продукция</a>
-                <ul class="sub-menu">
-                  <li class="sub-menu__item">
+                <ul class="promo__sub-menu  promo__sub-menu_one  sub-menu">
+                  <li class="sub-menu__item  sub-item">
                     <a href="#" class="sub-menu__link">Визитки</a>
                   </li>
                   <li class="sub-menu__item  sub-item">
@@ -125,37 +125,112 @@
                   </li>
                 </ul>
               </li>
-              <li class="promo__item">
+              <li class="promo__item  promo__item_two">
                 <a href="#" class="promo__link">Услуги</a>
-                <ul class="sub-menu">
+                <ul class="promo__sub-menu  promo__sub-menu_two  sub-menu">
                   <li class="sub-menu__item  sub-item">
-                    <a href="#" class="sub-item__heading">Меню</a>
+                    <a href="#" class="sub-menu__link">Визитки</a>
                   </li>
                   <li class="sub-menu__item  sub-item">
-                    <a href="#" class="sub-item__heading">Меню</a>
+                    <a href="#" class="sub-menu__link">Визитки</a>
                   </li>
                   <li class="sub-menu__item  sub-item">
-                    <a href="#" class="sub-item__heading">Меню</a>
+                    <a href="#" class="sub-menu__link">Визитки</a>
                   </li>
                   <li class="sub-menu__item  sub-item">
-                    <a href="#" class="sub-item__heading">Меню</a>
+                    <a href="#" class="sub-menu__link">Визитки</a>
                   </li>
                 </ul>
               </li>
-              <li class="promo__item">
+              <li class="promo__item  promo__item_three">
                 <a href="#" class="promo__link">Наружная и интерьерная реклама</a>
-                <ul class="sub-menu">
+                <ul class="promo__sub-menu  promo__sub-menu_three  sub-menu">
                   <li class="sub-menu__item  sub-item">
-                    <a href="#" class="sub-item__heading">Меню</a>
+                    <a href="#" class="sub-menu__link">Визитки</a>
                   </li>
                   <li class="sub-menu__item  sub-item">
-                    <a href="#" class="sub-item__heading">Меню</a>
+                    <a href="#" class="sub-menu__link">Визитки</a>
+                  </li>
+                  <li class="sub-menu__item  sub-item">
+                    <a href="#" class="sub-menu__link">Визитки</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
+        <h1 class="promo__heading">Широкоформатная печать</h1>
+        <div class="promo__wrapper  slider">
+          <input type="radio" class="slider__radio  slider__radio_one" name="slider-toggle" id="btn-1" checked>
+          <input type="radio" class="slider__radio  slider__radio_two" name="slider-toggle" id="btn-2">
+          <input type="radio" class="slider__radio  slider__radio_three" name="slider-toggle" id="btn-3">
+          <input type="radio" class="slider__radio  slider__radio_four" name="slider-toggle" id="btn-4">
+          <input type="radio" class="slider__radio  slider__radio_five" name="slider-toggle" id="btn-5">
+					<div class="slider__wrapper  slider__wrapper_labels">
+						<ul class="slider__list">
+							<li class="slider__item  slider__item_one">
+							  <label class="slider__label  slider__label_one" for="btn-1" tabindex="0">Виды печати</label>
+							 </li>
+							<li class="slider__item  slider__item_two">
+							  <label class="slider__label  slider__label_two" for="btn-2" tabindex="0">Стоимость</label>
+							</li>
+							<li class="slider__item  slider__item_three">
+							  <label class="slider__label  slider__label_three" for="btn-3" tabindex="0">Оплата и доставка</label>
+							</li>
+							<li class="slider__item  slider__item_four">
+							  <label class="slider__label  slider__label_four" for="btn-4" tabindex="0">Вопрос-ответ</label>
+							</li>
+							<li class="slider__item  slider__item_five">
+							  <label class="slider__label  slider__label_five" for="btn-5" tabindex="0">Заказать онлайн</label>
+							</li>
+						</ul>
+					</div>
+					<div class="slider__wrapper  slider__wrapper_slides">
+					  <div class="slider__slides">
+              <div class="slider__slide  slider__slide_one">
+                <h2 class="slider__heading">Все виды широкоформатной печати</h2>
+                <ul class="slider__features">
+                  <li class="slider__feature">Растяжки</li>
+                  <li class="slider__feature">Световые короба</li>
+                  <li class="slider__feature">Вывески</li>
+                  <li class="slider__feature">Штендеры</li>
+                </ul>
+                <div class="slider__wrapper">
+                  <a href="tel:+74952419637" class="slider__phone">+7 (495) 241-96-37</a>
+                  <button class="slider__button  button">Оформить онлайн</button>
+                </div>
+              </div>
+              <div class="slider__slide  slider__slide_two">
+                <h2 class="slider__heading">Стоимость</h2>
+                <div class="slider__wrapper">
+                  <a href="tel:+74952419637" class="slider__phone">+7 (495) 241-96-37</a>
+                  <button class="slider__button  button">Оформить онлайн</button>
+                </div>
+              </div>
+              <div class="slider__slide  slider__slide_three">
+                <h2 class="slider__heading">Оплата и доставка</h2>
+                <div class="slider__wrapper">
+                  <a href="tel:+74952419637" class="slider__phone">+7 (495) 241-96-37</a>
+                  <button class="slider__button  button">Оформить онлайн</button>
+                </div>
+              </div>
+              <div class="slider__slide  slider__slide_four">
+                <h2 class="slider__heading">Вопрос-ответ</h2>
+                <div class="slider__wrapper">
+                  <a href="tel:+74952419637" class="slider__phone">+7 (495) 241-96-37</a>
+                  <button class="slider__button  button">Оформить онлайн</button>
+                </div>
+              </div>
+              <div class="slider__slide  slider__slide_five">
+                <h2 class="slider__heading">Заказать онлайн</h2>
+                <div class="slider__wrapper">
+                  <a href="tel:+74952419637" class="slider__phone">+7 (495) 241-96-37</a>
+                  <button class="slider__button  button">Оформить онлайн</button>
+                </div>
+              </div>
+            </div>
+					</div>
+				</div>
       </section>
     </main>
     <footer class="page-footer">

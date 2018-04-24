@@ -57,26 +57,31 @@
       width: 271px;
     }
 
-    &_contacts {
+    &_contacts,
+    &_adress {
+      margin-left: 0;
+      margin-right: 0;
       padding-left: 38px;
-      background-image: url("../img/phone.png");
+      width: 281px;
       background-repeat: no-repeat;
+    }
+
+    &_contacts {
+      background-image: url("../img/phone.png");
     }
 
     &_adress {
       order: 1;
-      padding-left: 38px;
       background-image: url("../img/pin.png");
-      background-repeat: no-repeat;
     }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    max-width: 100%;
 
     &_low {
-      padding-bottom: 30px;
+      justify-content: space-between;
+      padding-bottom: 25px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -84,6 +89,7 @@
     &_small {
       margin-bottom: 0;
       margin-right: 0;
+      margin-left: 0;
       width: 281px;
     }
 

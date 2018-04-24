@@ -7,7 +7,13 @@
 .site-list__item {
   &_btn {
     margin-left: auto;
-    width: 190px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    &_btn {
+      width: auto;
+    }
   }
 }
 
@@ -56,12 +62,9 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   @media (min-width: $desktop-width) {
     padding-left: 30px;
+    width: auto;
     font-size: 11px;
     line-height: 21px;
     border: 0;
