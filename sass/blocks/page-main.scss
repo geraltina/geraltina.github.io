@@ -1,81 +1,70 @@
-.page-main__promo {
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-  text-align: center;
-
-  &--one {
-    padding-top: 47px;
-    padding-bottom: 48px;
-  }
-
-  &--two {
-    padding-top: 41px;
-    padding-bottom: 41px;
-  }
-
-  &--three {
-    padding-top: 47px;
-    padding-bottom: 48px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--one {
-      padding-top: 94px;
-      padding-bottom: 75px;
-    }
-
-    &--two {
-      padding-top: 43px;
-      padding-bottom: 67px;
-    }
-
-    &--three {
-      padding-top: 92px;
-      padding-bottom: 70px;
-    }
-  }
-
+.page-main__wrapper {
   @media (min-width: $desktop-width) {
-    &--one {
-      padding-top: 91px;
-      padding-bottom: 88px;
-    }
+    &_line {
+      position: relative;
 
-    &--two {
-      padding-top: 6px;
-      padding-bottom: 67px;
-    }
-
-    &--three {
-      padding-top: 92px;
-      padding-bottom: 84px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 84px;
+        height: 3px;
+        background-color: $pink;
+      }
     }
   }
 }
 
-.page-main__text {
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 275px;
-  line-height: 30px;
-
-  &--one {
-    width: 253px;
-  }
+.page-main__promo {
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
-    font-size: 18px;
-    line-height: 30px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 600px;
+    margin-bottom: 84px;
+  }
+}
 
-    &--form {
-      width: 780px;
+.page-main__cost {
+  @media (min-width: $desktop-width) {
+    margin-right: 105px;
+  }
+}
+
+.page-main__heading {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-bottom: 17px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $oswald;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $pink;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+    padding-bottom: 0;
+
+    &::after {
+      content: none;
     }
   }
 }
