@@ -313,7 +313,7 @@
             </div>
         </section>
       </div>
-      <div class="page-main__wrapper  page-main__wrapper_line  wrapper  wrapper--width">
+      <div class="page-main__wrapper  page-main__wrapper_line  page-main__wrapper_question  wrapper  wrapper--width">
         <section class="page-main__inline-right  page-main__questions  questions">
           <h3 class="page-main__heading  questions__heading">Ответы на ваши вопросы</h3>
           <div class="questions__wrapper">
@@ -479,6 +479,27 @@
               </div>
             </div>
           </div>
+        </section>
+      </div>
+      <div class="page-main__wrapper  wrapper  wrapper--width">
+        <section class="page-main__inline-right  page-main__order  order">
+          <form action="#" method="post" class="order__form">
+            <fieldset class="order__fieldset">
+              <legend class="order__legend">Оформить заказ</legend>
+              <div class="order__wrapper  order__wrapper_flex">
+                <input type="text" class="order__input" placeholder="Ваше имя">
+                <input type="text" class="order__input" placeholder="Компания">
+                <input type="text" class="order__input" placeholder="Ваш e-mail">
+                <input type="text" class="order__input" placeholder="Телефон*">
+                <textarea name="comment" id="" cols="30" rows="5" class="order__textarea" placeholder="Комментарий"></textarea>
+                <div class="order__wrapper  order__wrapper_file">
+                  <input type="file" id="file" class="order__file">
+                  <label for="file" class="order__label order__label_file">Прикрепить файл</label>
+                </div>
+              </div>
+              <button type="submit" class="order__button button">Отправить</button>
+            </fieldset>
+          </form>
         </section>
       </div>
     </main>
