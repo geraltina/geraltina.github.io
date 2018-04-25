@@ -40,6 +40,18 @@
   line-height: 18px;
   background-color: $base-color;
   text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    color: $base-color;
+    background-color: $light-blue;
+  }
+
+  &:active {
+    color: $base-color;
+    background-color: $light-blue;
+    box-shadow: inset 0 0 30px 0 rgba(55, 47, 129, 0.8);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -58,6 +70,7 @@
 .slider__radio_four:checked ~ .slider__wrapper .slider__label_four,
 .slider__radio_five:checked ~ .slider__wrapper .slider__label_five,
 .slider__radio_six:checked ~ .slider__wrapper .slider__label_six {
+  color: white;
   background-color: $pink;
 }
 
