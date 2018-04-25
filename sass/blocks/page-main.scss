@@ -43,7 +43,9 @@
   }
 }
 
-.page-main__cost {
+.page-main__cost,
+.page-main__questions,
+.page-main__order {
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -55,15 +57,9 @@
   }
 }
 
-.page-main__questions {
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-
+.page-main__order {
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 

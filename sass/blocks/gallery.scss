@@ -1,0 +1,73 @@
+.gallery {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    width: 926px;
+  }
+}
+
+.gallery__arrow {
+  position: absolute;
+  top: 118px;
+  width: 19px;
+  padding-top: 24px;
+  height: 0;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+
+  &_left {
+    left: -19px;
+    background-image: url("../img/arrow-left.png");
+  }
+
+  &_right {
+    right: -19px;
+    background-image: url("../img/arrow-right.png");
+  }
+
+  &_left:hover {
+    background-image: url("../img/arrow-left-pink.png");
+  }
+
+  &_right:hover {
+    background-image: url("../img/arrow-right-pink.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    &_left {
+      left: -35px;
+    }
+
+    &_right {
+      right: -35px;
+    }
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 260px;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.gallery__img {
+  margin-bottom: 10px;
+}
