@@ -32,18 +32,19 @@
     margin-bottom: 20px;
   }
 
-  &_contacts {
+  &_contacts,
+  &_address {
     padding-left: 37px;
-    background-image: url("../img/phone.png");
     background-repeat: no-repeat;
     background-position-y: 7px;
   }
 
-  &_adress {
-    padding-left: 37px;
+  &_contacts {
+    background-image: url("../img/phone.png");
+  }
+
+  &_address {
     background-image: url("../img/pin.png");
-    background-repeat: no-repeat;
-    background-position-y: 7px;
   }
 
   @media (min-width: $tablet-width) {
@@ -58,7 +59,7 @@
     }
 
     &_contacts,
-    &_adress {
+    &_address {
       margin-left: 0;
       margin-right: 0;
       padding-left: 38px;
@@ -70,7 +71,7 @@
       background-image: url("../img/phone.png");
     }
 
-    &_adress {
+    &_address {
       order: 1;
       background-image: url("../img/pin.png");
     }
@@ -104,7 +105,7 @@
       width: 215px;
     }
 
-    &_adress {
+    &_address {
       order: 0;
     }
   }

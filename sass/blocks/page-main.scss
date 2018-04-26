@@ -43,9 +43,12 @@
   }
 }
 
+.page-main__popular,
 .page-main__cost,
+.page-main__options,
 .page-main__questions,
-.page-main__order {
+.page-main__order,
+.page-main__contacts {
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -57,9 +60,25 @@
   }
 }
 
+.page-main__popular {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .page-main__order {
   @media (min-width: $desktop-width) {
     margin-bottom: 100px;
+  }
+}
+
+.page-main__portfolio {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
