@@ -1,0 +1,22 @@
+.sub-menu {
+  justify-content: space-between;
+  display: none;
+  margin: 0;
+  width: 100%;
+  padding: 20px 20px;
+  list-style: none;
+  background-color: #ecf5fd;
+  box-sizing: border-box;
+  box-shadow: 0 28px 95px 0 rgba(55, 47, 129, 0.26);
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 10;
+    padding: 70px 100px;
+    min-height: 720px;
+  }
+}

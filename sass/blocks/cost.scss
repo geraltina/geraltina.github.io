@@ -1,0 +1,159 @@
+.cost__table {
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.cost__thead {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.cost__row {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $gray;
+  border: 1px solid $light-blue;
+
+  &:nth-child(odd) {
+    background-color: $light-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.cost__thead .cost__row {
+  font-weight: bold;
+  color: white;
+  background-color: $base-color;
+  border: 1px solid $base-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.cost__col {
+  padding: 7px 0;
+  text-align: center;
+  box-sizing: border-box;
+
+  &_pink {
+    font-weight: bold;
+    color: $base-color;
+    background-color: $pink;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+    width: 120px;
+
+    &:first-child {
+      width: 188px;
+      text-align: left;
+    }
+
+    &_pink {
+      color: white;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    width: 150px;
+
+    &:first-child {
+      width: 324px;
+    }
+  }
+}
+
+.cost__thead .cost__col {
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.cost__param {
+  font-weight: bold;
+  color: $base-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.cost__extra {
+  position: relative;
+  padding: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $light-blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 24px;
+  }
+}
+
+.cost__text {
+  margin: 0;
+
+  &_blue {
+    margin-bottom: 10px;
+  }
+
+  &_gray {
+    color: $gray;
+  }
+}
+
+.cost__video {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+  }
+}
+
+.cost__iframe {
+  @media (min-width: $tablet-width) {
+    min-height: 377px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 522px;
+  }
+}

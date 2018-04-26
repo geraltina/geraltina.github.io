@@ -1,0 +1,134 @@
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.options__wrapper {
+  &_flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    &_flex {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &_pay,
+    &_delivery {
+      width: 600px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &_pay {
+      width: 600px;
+    }
+
+    &_delivery {
+      width: 309px;
+    }
+  }
+}
+
+.options__item {
+  position: relative;
+  padding-left: 153px;
+  margin-bottom: 23px;
+  min-height: 116px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 116px;
+    height: 116px;
+    background-color: $light-blue;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+  }
+
+  &_purse::before {
+    top: 27px;
+    left: 28px;
+    width: 68px;
+    height: 59px;
+    background-image: url("../img/purse.png");
+  }
+
+  &_card::before {
+    top: 22px;
+    left: 24px;
+    width: 69px;
+    height: 62px;
+    background-image: url("../img/card.png");
+  }
+
+  &_bill::before {
+    top: 21px;
+    left: 27px;
+    width: 63px;
+    height: 75px;
+    background-image: url("../img/bill.png");
+  }
+
+  &_online::before {
+    top: 24px;
+    left: 26px;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/online.png");
+  }
+
+  &_clock::before {
+    top: 24px;
+    left: 25px;
+    width: 67px;
+    height: 67px;
+    background-image: url("../img/clock.png");
+  }
+
+  &_car::before {
+    top: 36px;
+    left: 11px;
+    width: 89px;
+    height: 42px;
+    background-image: url("../img/car.png");
+  }
+}
+
+.options__wrapper_pay .options__item {
+  @media (min-width: $tablet-width) {
+    width: 283px;
+  }
+}
+
+.options__wrapper_delivery .options__item {
+  @media (min-width: $tablet-width) {
+    width: 317px;
+  }
+}
+
+.options__text {
+  margin: 0;
+  padding-top: 15px;
+  font-weight: bold;
+  color: $base-color;
+}
